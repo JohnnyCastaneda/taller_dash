@@ -23,7 +23,7 @@ app.config.suppress_callback_exceptions = True
 # Load data from csv
 def load_data():
     # Ruta del archivo CSV 
-    file_path = 'C:/Users/johnn/OneDrive/Escritorio/gitfolder/datos_energia.csv'
+    file_path = 'datos_energia.csv'
     # Cargar el archivo CSV en un DataFrame
     df = pd.read_csv(file_path)
 
