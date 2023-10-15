@@ -26,6 +26,7 @@ def load_data():
     file_path = 'datos_energia.csv'
     # Cargar el archivo CSV en un DataFrame
     df = pd.read_csv(file_path)
+    df = df.rename(columns={'time': 'Fecha'})
 
     # Convertir la columna de fecha a tipo datetime
     df['Fecha'] = pd.to_datetime(df['Fecha'])
